@@ -1,0 +1,34 @@
+.nav-menu{
+    
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        
+
+       
+        a{
+            text-decoration: none;
+            color: inherit;
+
+            img{
+                width: 2rem;
+            }
+        }
+    }
+}
+.navbar{
+    display: none;
+}
+.nav-links-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
