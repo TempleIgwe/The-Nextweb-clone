@@ -1,17 +1,17 @@
-.nav-bar ul, .nav-link-items ul, .nav-menu ul {
+.nav-bar ul, .nav-link-items ul, .nav-menu-items ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
 }
-.nav-bar ul a, .nav-link-items ul a, .nav-menu ul a {
+.nav-bar ul a, .nav-link-items ul a, .nav-menu-items ul a {
   text-decoration: none;
 }
 
-.nav-menu {
-  color: inherit;
+.nav-menu-items a {
+  color: blue;
 }
-.nav-menu img {
+.nav-menu-items img {
   width: 2rem;
 }
 

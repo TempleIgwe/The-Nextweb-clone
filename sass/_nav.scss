@@ -13,9 +13,11 @@
 }
 
 
-.nav-menu{
+.nav-menu-items{
     @extend .nav-bar;
-    color: inherit;
+    a{
+        color: $inherit;
+    }
     img {
             width: 2rem;
         }
@@ -23,7 +25,7 @@
 }
 .nav-link-items{
     @extend .nav-bar;
-    color: ;
+    
 }
 .navbar {
     display: none;
