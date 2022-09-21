@@ -1,34 +1,30 @@
-.nav-menu{
-    
+.nav-bar{
+
     ul{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        
 
-       
         a{
             text-decoration: none;
-            color: inherit;
-
-            img{
-                width: 2rem;
-            }
         }
     }
 }
-.navbar{
-    display: none;
-}
-.nav-links-items{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
 
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
+
+.nav-menu{
+    @extend .nav-bar;
+    color: inherit;
+    img {
+            width: 2rem;
+        }
+  
+}
+.nav-link-items{
+    @extend .nav-bar;
+    color: ;
+}
+.navbar {
+    display: none;
 }
