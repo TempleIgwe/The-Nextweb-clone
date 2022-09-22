@@ -8,6 +8,7 @@
 
         a{
             text-decoration: none;
+        
         }
     }
 }
@@ -15,16 +16,19 @@
 
 .nav-menu-items{
     @extend .nav-bar;
-    a{
-        color: $inherit;
-    }
+
     img {
-            width: 2rem;
+            width: 3rem;
         }
   
 }
 .nav-link-items{
     @extend .nav-bar;
+    li{
+        a{
+            color: $secondary-color;
+        }
+    }
     
 }
 .navbar {

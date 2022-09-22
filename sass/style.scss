@@ -1,4 +1,9 @@
-@import 'nav', 'config', 'footer', 'icons', 'section' ;
+@import 'config';
+@import 'nav', 'footer', 'icons', 'section';
 body{
     background-color: $background;
+   
 }
+// main{
+//     padding: 0 1rem 0 1rem;
+// }

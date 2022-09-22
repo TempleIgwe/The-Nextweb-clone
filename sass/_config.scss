@@ -2,6 +2,18 @@ $primary-color: #fff;
 $background: #f8f8f8;
 $secondary-color: gray;
 $font-stack: Dangrek, sans-serif;
-$btn-color:#7b7cf8;
+$btn-color:#883dff;
 $inherit: #000;
+
+% section {
+    width: 50rem;
+    padding-left: 15rem;
+}
+% section-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    border-top: 1px solid lighten($secondary-color, $amount: 30%);
+    padding: 1rem 0;
+}
 
