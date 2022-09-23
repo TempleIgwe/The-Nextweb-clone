@@ -299,18 +299,20 @@
                 }
             }
         }
+        
 
 
 
 
         .section-six{
-            @extend % section;
+            @include section;
             .heading{
-               @extend % section-heading;
+               @include section-heading;
             }
             .plugg-content{
                 display: flex;
                 gap: 30px;
+                
             }
             .plug-content{
                 display: flex;
@@ -326,11 +328,10 @@
             }
         }
         .section-seven{
-
-            @extend % section;
+            @include section;
             
             .heading {
-                @extend % section-heading;
+                @include section-heading;
             }
             .plugg-content {
                 display: flex;
@@ -340,6 +341,11 @@
                 display: flex;
                 gap: 10px;
             }
+            .neutral{
+                width: 26rem;
+            
+            }
+            
 
             h6{
                 color: lighten($secondary-color, $amount: 30%);
@@ -347,6 +353,168 @@
             }
             p{
                 margin-top: -1rem;
+            }
+        }
+        .section-eight{
+            @include section;
+            
+            .heading {
+                @include section-heading;
+                }
+            
+            .plugg-content {
+                 display: flex;
+                 gap: 30px;
+            }
+            
+            .plug-content {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .neutral {
+                width: 26rem;
+            
+            }
+            
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: -1rem;
+            }
+        }
+        .section-nine{
+            @include section;
+            
+            .heading {
+                @include section-heading;
+                }
+            
+            .plugg-content {
+                 display: flex;
+                 gap: 30px;
+            }
+            
+            .plug-content {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .neutral {
+                width: 26rem;
+            
+            }
+            
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: -1rem;
+            }
+        }
+        .section-ten{
+            @include section;
+            
+            .heading {
+                @include section-heading;
+                }
+            
+            .plugg-content {
+                 display: flex;
+                 gap: 30px;
+            }
+            
+            .plug-content {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .neutral {
+                width: 26rem;
+            
+            }
+            
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: -1rem;
+            }
+        }
+
+
+
+        .section-eleven{
+            background-color: lighten($secondary-color, $amount: 43%);
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+        .section-twelve{
+            .amazon-section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .amazon-article{
+                flex: 1;
+                padding-left: 12rem;
+                button{
+                    background-color: $btn-color;
+                    padding: 1rem 2rem;
+                    color: $primary-color;
+                    border: solid transparent;
+                    border-radius: 0.3rem;
+                }
+            }
+            .amazon-icons{
+                flex: 1;
+                div{
+                    display: flex;
+                    align-items: center;
+                    h6{
+                        color: $inherit;
+                        font-size: 1rem;
+                    }
+                }
+                img{
+                    width: 7rem;
+                }
+            }
+                
+        
+            h6{
+                color: lighten($secondary-color, $amount: 20%);
+            }
+            h1{
+                font-size: 3rem;
+                color: $btn-color;
+            }
+            .partners{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 8rem;
+                }
+            }
+        }
+        .section-thirteen{
+            background-color: $inherit;
+            h3{
+                color: $primary-color;
+            }
+            .fa-brands,
+            .fa-solid{
+                color: lighten($secondary-color, $amount: 20%);
             }
         }
 
