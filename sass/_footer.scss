@@ -1,0 +1,65 @@
+.section-thirteen {
+    background-color: $inherit;
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 1rem;
+
+        img {
+            width: 12rem;
+
+        }
+    }
+
+    h3 {
+        color: $primary-color;
+        padding-left: 0.9rem;
+        margin-top: -0.1rem;
+        margin-bottom: 8rem;
+        font-size: 2rem;
+
+    }
+
+    h5 {
+        color: $primary-color;
+        font-size: 1rem;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        color: lighten($secondary-color, $amount: 20%);
+        padding: 0.2rem;
+        padding-left: 0.9rem;
+
+
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 195, 255);
+            padding: 0.4rem;
+        }
+    }
+}
+
+.section-fourteen {
+    background-color: $inherit;
+    color: $primary-color;
+    padding: 3rem;
+    margin-top: 0.03rem;
+    text-align: center;
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}

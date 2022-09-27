@@ -1,124 +1,180 @@
-// .section-one-right {
-//     display: none;
-// }
-// .section-one-left{
-//     display: flex;
+
+    .section-one-right {
+            display: none;
+        }
+    
+        .section-one-left {
+            display: flex;
     
     
-// //    .left-bottom{
-// //     position: relative;
-// //     left: 10%;
-// //     width: 100%;
-// //     height: 100%;
-// //    }
+            .left-bottom {
+                position: relative;
+                left: 10%;
+                width: 100%;
+                height: 100%;
+            }
     
-// }
-
-
-
-// .section-two{
-//     cursor: pointer;
-//     h1{
-//         font-size: 3rem;
-//         text-align: center;
-//     }
-//     .flex-item{
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         gap: 10px;
-//         img {
-//                 width: 30vw;
-//             }
-//     }
-// }
-// .section-three{
-//     cursor: pointer;
+        }
     
-
-//     h1{
-//             font-size: 3rem;
-//             text-align: center;
-//     }
-//     img {
-//             width: 30vw;
-//     }
-//     .grid-item{
-//         display: flex;
-//         justify-content: center;
-//         gap: 2px;
     
-//     }
-//     .item{
-//         padding: 0;
-//         margin: 0;
-//         color: ($secondary-color);
-//     }
-//     .item:hover{
-//         color: $inherit;
-//     }
-//     .item-paragraph{
-//         margin-top: 6px;
-//     }
-//     .item-paragraph:hover{
-//         text-decoration: underline;
-//         border-bottom: 1px $btn-color;
-//     }
     
-// }
-// .section-four{
-//     button{
-//         background-color: $btn-color;
-//         color: $primary-color;
-//         padding: 1rem;
-//         border: 1px solid transparent;
-//         border-radius: 2rem;
-//         width: 100%;
-        
-        
-//     }
-// }
-// .section-five{
-//     background-color: $btn-color;
-//     color: $primary-color;
-//     padding: 2rem;
-//     margin-top: 4rem;
-
-//     span{
-//         color: rgb(127, 236, 255);
-//         width: 60vw;
-//         text-align: center;
-//     }
-//     h1{
-//         font-size: 2rem;
-//         margin: auto;
-//         width: 60vw;
-//         text-align: center;
-//         margin-top: -2rem;
-        
-//     }
-//     p{
-//         width: 50vw;
-//        margin: auto;
-//        line-height: 15px;
-//        text-align: center;
-//        padding-bottom: 3rem;
-//     }
-//     .social-icons,
-//     form {
-//             display: none;
-//     }
+        .section-two {
+            cursor: pointer;
     
-// }
+            h1 {
+                font-size: 3rem;
+                text-align: center;
+            }
+    
+            .flex-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+    
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+    
+        .section-three {
+            cursor: pointer;
+    
+    
+            h1 {
+                font-size: 3rem;
+                text-align: center;
+            }
+    
+            img {
+                width: 30vw;
+            }
+    
+            .grid-item {
+                display: flex;
+                justify-content: center;
+                gap: 2px;
+    
+            }
+    
+            .item {
+                padding: 0;
+                margin: 0;
+                color: ($secondary-color);
+            }
+    
+            .item:hover {
+                color: $inherit;
+            }
+    
+            .item-paragraph {
+                margin-top: 6px;
+            }
+    
+            .item-paragraph:hover {
+                text-decoration: underline;
+                border-bottom: 1px $btn-color;
+            }
+    
+        }
+    
+        .section-four {
+            button {
+                background-color: $btn-color;
+                color: $primary-color;
+                padding: 1rem;
+                border: 1px solid transparent;
+                border-radius: 2rem;
+                width: 100%;
+    
+    
+            }
+        }
+    
+        .section-five {
+            background-color: $btn-color;
+            color: $primary-color;
+            padding: 2rem;
+            margin-top: 4rem;
+    
+            span {
+                color: rgb(127, 236, 255);
+                width: 60vw;
+                text-align: center;
+            }
+    
+            h1 {
+                font-size: 2rem;
+                margin: auto;
+                width: 60vw;
+                text-align: center;
+                margin-top: -2rem;
+    
+            }
+    
+            p {
+                width: 50vw;
+                margin: auto;
+                line-height: 15px;
+                text-align: center;
+                padding-bottom: 3rem;
+            }
+    
+            .social-icons,
+            form {
+                display: none;
+            }
+    
+        }
+
+        // try out
+
+        .amazon-article{
+                display: block;
+                padding-left: 12rem;
+                button{
+                    background-color: $btn-color;
+                    padding: 1rem 2rem;
+                    color: $primary-color;
+                    border: solid transparent;
+                    border-radius: 0.3rem;
+                }
+            }
+            .amazon-icons{
+                display: flex;
+                flex-wrap: wrap;
+
+                
+                div{
+                    
+                    display: flex;
+                    align-items: center;
+                    width: 40%;
+                    padding: 1rem;
+                    
+                    h6{
+                        color: $inherit;
+                        font-size: 1rem;
+                    }
+                }
+                img{
+                    width: 7rem;
+                }
+            }
+            .partners{
+                padding: 5rem 0;
+            }
 
 
 
 
-// @media(min-width: 768px){
-//     .section-one-right {
-//             display: flex;
-//         }
-// }
+
+@media(min-width: 768px){
+    .section-one-right {
+            display: flex;
+        }
+}
 
 @media(min-width:1200px){
     .section-one {
@@ -143,6 +199,7 @@
                 .article{
                     position: absolute;
                     top: 10rem;
+                    left: 2rem;
                     width: 30rem;
                 }
             }
@@ -157,6 +214,7 @@
                 .article {
                     position: absolute;
                     top: 0rem;
+                    left: 2rem;
                 }
             }
 
@@ -178,6 +236,7 @@
                     width: 20rem;
                     position: absolute;
                     bottom: 0rem;
+                    margin-left: 1.5rem;
                 }
             }
             .right-bottom{
@@ -191,6 +250,7 @@
                     
                     position: absolute;
                     bottom: 0rem;
+                    left: 2rem;
                 }
             }
         }
@@ -455,7 +515,28 @@
             background-color: lighten($secondary-color, $amount: 43%);
             display: flex;
             justify-content: center;
-            align-items: center;   
+            align-items: center; 
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 4rem;
+            .airtag-links{
+                width: 18rem;
+                padding-top: 2rem;
+            }
+           
+            .airtags{
+                img{
+                    width: 18rem;
+                    height: 9rem;
+                    margin-bottom: -1rem;
+                   
+                    
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                
+            }  
         }
         .section-twelve{
             .amazon-section{
@@ -476,9 +557,17 @@
             }
             .amazon-icons{
                 flex: 1;
+                display: flex;
+                flex-wrap: wrap;
+
+                
                 div{
+                    
                     display: flex;
                     align-items: center;
+                    width: 40%;
+                    padding: 1rem;
+                    
                     h6{
                         color: $inherit;
                         font-size: 1rem;
@@ -487,6 +576,9 @@
                 img{
                     width: 7rem;
                 }
+            }
+            .partners{
+                padding: 5rem 0;
             }
                 
         
@@ -507,15 +599,6 @@
                 }
             }
         }
-        .section-thirteen{
-            background-color: $inherit;
-            h3{
-                color: $primary-color;
-            }
-            .fa-brands,
-            .fa-solid{
-                color: lighten($secondary-color, $amount: 20%);
-            }
-        }
+        
 
 }
