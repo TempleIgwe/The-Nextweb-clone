@@ -1,5 +1,6 @@
 
     .section-one-right {
+        margin-left: 1rem;
             display: none;
         }
     
@@ -19,11 +20,15 @@
     
     
         .section-two {
+            margin-left: 1rem;
             cursor: pointer;
     
             h1 {
                 font-size: 3rem;
                 text-align: center;
+            }
+            .flex-container{
+                display: block;
             }
     
             .flex-item {
@@ -39,6 +44,7 @@
         }
     
         .section-three {
+            margin-left: 1rem;
             cursor: pointer;
     
     
@@ -80,6 +86,7 @@
         }
     
         .section-four {
+            margin-left: 1rem;
             button {
                 background-color: $btn-color;
                 color: $primary-color;
@@ -93,6 +100,7 @@
         }
     
         .section-five {
+            margin-left: 1rem;
             background-color: $btn-color;
             color: $primary-color;
             padding: 2rem;
@@ -120,19 +128,232 @@
                 text-align: center;
                 padding-bottom: 3rem;
             }
-    
-            .social-icons,
-            form {
-                display: none;
+            .submit{
+                input {
+                        padding: 0.8rem;
+                        border: solid transparent;
+                        background-color: lighten($btn-color , $amount: 10%);
+                        border-radius: 0.3rem;
+                        width: 15rem;
+                        margin-left: 3rem;
+                }
+                
+                button {
+                    padding: 0.8rem;
+                    border: solid transparent;
+                    background-color: lighten($btn-color , $amount: 10%);
+                    margin-left: -2rem;
+                    border-radius: 0.3rem;
+                    color: $primary-color;
+                
+                }
             }
-    
+            .checkbox{
+                margin-top: 1rem;
+                display: flex;
+                justify-content: center;
+                color: lighten($btn-color , $amount: 20%);
+                margin-left: 2rem;
+
+                input{
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    margin-right: 1rem;
+                }
+                label{
+                    padding-top: 0;
+                    margin-top: 0.4rem;
+                    font-size: 0.8rem;
+                }
+            }
+            .social-icons{
+                margin-top: 1rem;
+                margin-left: 3rem;
+                .fa-brands,
+                .fa-solid{
+                    color: lighten($btn-color, $amount: 20%);
+                    padding: 0.2rem;
+                    
+                }
+            }
         }
-
-        // try out
-
-        .amazon-article{
+           .section-six {
                 display: block;
-                padding-left: 12rem;
+                margin-left: 1rem;
+    
+               
+    
+               .plugg-content {
+                   display: block;
+    
+               }
+    
+               .plug-content {
+                   display: flex;
+                   gap: 10px;
+               }
+    
+               h6 {
+                   color: lighten($secondary-color, $amount: 30%);
+                   margin-top: 0;
+               }
+    
+               p {
+                   margin-top: -1rem;
+               }
+           }
+           
+        .section-seven{
+            display: block;
+            margin-left: 1rem;
+
+            .plugg-content {
+                display: block;
+                
+            }
+            .plug-content{
+                display: flex;
+                gap: 10px;
+            }
+            .neutral{
+                width: 80vw;
+               
+            
+            }
+            h6{
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+            p{
+                margin-top: -1rem;
+            }
+        }
+        .section-eight{
+            display: block;
+            margin-left: 1rem;
+
+            .plugg-content {
+                 display: block;
+                
+            }
+            
+            .plug-content {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .neutral {
+                width: 26rem;
+            
+            }
+            
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: -1rem;
+            }
+            }
+            
+            
+        
+        .section-nine{
+            display: block;
+            margin-left: 1rem;
+
+            .plugg-content {
+                 display: block;
+                 
+            }
+            
+            .plug-content {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .neutral {
+                width: 80vw;
+                
+            
+            }
+            
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: -1rem;
+            }
+        }
+        .section-ten{
+            display: block;
+            margin-left: 1rem;
+
+            .plugg-content {
+                 display: block;
+                 
+            }
+            
+            .plug-content {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .neutral {
+                width: 80vw;
+                
+            
+            }
+            
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+            
+            p {
+                margin-top: -1rem;
+            }
+        }
+        .section-eleven{
+            display: block;
+
+            .airtag-links{
+                display: flex;
+                gap: 10px;
+                overflow: scroll;
+                padding: 1rem;
+            }
+
+            .airtags{
+                
+                img{
+                    width: 45vw;
+                    height: 9rem;
+                    margin-bottom: -1rem;   
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                
+            }  
+
+        }
+        .section-twelve{
+           
+             .amazon-article{
+                display: block;
+                text-align: center;
+                h6{
+                    color: lighten($secondary-color, $amount: 20%);
+                }
+                h1{
+                    font-size: 2.5rem;
+                    color: $btn-color;
+                }
+               
                 button{
                     background-color: $btn-color;
                     padding: 1rem 2rem;
@@ -143,38 +364,39 @@
             }
             .amazon-icons{
                 display: flex;
+                justify-content: center;
                 flex-wrap: wrap;
 
                 
                 div{
-                    
-                    display: flex;
-                    align-items: center;
                     width: 40%;
                     padding: 1rem;
+                   
                     
                     h6{
+                        text-align: center;
+                      
                         color: $inherit;
                         font-size: 1rem;
                     }
                 }
                 img{
-                    width: 7rem;
+                    width: 6rem;
+                    margin-left: 3rem;
                 }
             }
             .partners{
-                padding: 5rem 0;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                
+                img{
+                    width: 10rem;
+                }
             }
 
-
-
-
-
-@media(min-width: 768px){
-    .section-one-right {
-            display: flex;
         }
-}
+        
 
 @media(min-width:1200px){
     .section-one {
@@ -220,6 +442,7 @@
 
         }
         .section-one-right{
+            display: inline;
             color: $primary-color;
             
             .right-top{
@@ -241,6 +464,7 @@
             }
             .right-bottom{
                 position: relative;
+                
 
                 img{
                     width: 45rem;
@@ -255,6 +479,7 @@
             }
         }
         .section-two{
+            cursor: pointer;
             h1{
                 font-size: 2.5rem;
                 text-align: center;
@@ -263,6 +488,13 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             }
+            .flex-item{
+                display: block;
+                img {
+                        width: 18vw;
+                    }
+            }
+          
         }
         .section-three{
             
@@ -270,11 +502,18 @@
                     font-size: 2.5rem;
                     text-align: center;
             }
+           
             .grid-container{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 18px;
                 padding: 0 15rem;
+                .grid-item{
+                    display: block;
+                }
+                 img {
+                width: 18vw;
+               }
                 
                 
             }
@@ -293,24 +532,27 @@
                 padding: 1rem 3rem;
                 border: none;
                 border-radius: 2rem;
-                background-color: $btn-color;
+                width: 15%;
                
                 
             }
         }
         .section-five{
             background-color: $btn-color;
-            width: 100%;
+            width: 100vw;
             padding: 8rem;
             color: $primary-color;
             text-align: center;
 
             h1{
                 font-size: 4rem;
+                
             }
             p{
-                margin-top: -3rem;
+                margin-top: 3rem;
             }
+           
+    
            
             .submit{
                 input {
@@ -519,6 +761,7 @@
             flex-wrap: wrap;
             gap: 1rem;
             padding: 4rem;
+
             .airtag-links{
                 width: 18rem;
                 padding-top: 2rem;

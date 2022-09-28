@@ -1,4 +1,5 @@
-.section-thirteen {
+@media(min-width:1200px){
+    .section-thirteen {
     background-color: $inherit;
 
     .flex {
@@ -62,4 +63,5 @@
     p {
         font-size: 0.8rem;
     }
+}
 }
