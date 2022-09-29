@@ -1,4 +1,6 @@
-
+.section--one {
+    display: none;
+}
     .section-one-right {
         margin-left: 1rem;
             display: none;
@@ -6,12 +8,42 @@
     
         .section-one-left {
             display: flex;
+
+            .left-top{
+                img{
+                    width: 80vw;
+                }
+                 position: relative;
+                .article{
+                    position: absolute;
+                    top: 4rem;
+                    left: 2rem;
+                    width: 20rem;
+                    color: $primary-color;
+                }
+            }
     
             .left-bottom {
-                position: relative;
-                left: 10%;
-                width: 100%;
-                height: 100%;
+                position: absolute;
+                left: 25rem;
+                clip: rect(0 90px 225px 10px);
+                
+                .article {
+                    position: absolute;
+                    top: 0rem;
+                    left: 2rem;
+                    color: $primary-color;
+                    
+                    .video{
+                        border: 2px solid $primary-color;
+                        margin-top: 5rem;
+                        border-radius: 20px ;
+                        width: 8rem;
+                        text-align: center;
+                        padding: 0.8rem;
+                        font-weight: 900;
+                    }
+                }
             }
     
         }
@@ -48,7 +80,7 @@
     
     
             h1 {
-                font-size: 3rem;
+                font-size: 2rem;
                 text-align: center;
             }
     
@@ -319,10 +351,14 @@
         .section-eleven{
             display: block;
 
+            iframe{
+                width: 100vw;
+            }
+
             .airtag-links{
                 display: flex;
                 gap: 10px;
-                overflow: scroll;
+                overflow-x: scroll;
                 padding: 1rem;
             }
 
@@ -345,6 +381,7 @@
              .amazon-article{
                 display: block;
                 text-align: center;
+                font-size: 1.2rem;
                 h6{
                     color: lighten($secondary-color, $amount: 20%);
                 }
@@ -395,15 +432,611 @@
             }
 
         }
+@media(min-width:768px) {
+    .section-one {
+        display: none;
+    }
+
+    .section--one {
+        display: inline;
+
+        .top {
+            img {
+                width: 100%;
+            }
+
+            position: relative;
+
+            .article {
+                position: absolute;
+                bottom: 1rem;
+                left: 2rem;
+                color: $primary-color;
+            }
+        }
+
+        .middle {
+            display: flex;
+            gap: 10px;
+
+            .middle-1 {
+                flex: 2;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                }
+
+                position: relative;
+
+                .article {
+                    position: absolute;
+                    top: 4rem;
+                    left: 2rem;
+                    color: $primary-color;
+                }
+            }
+
+            .middle-2 {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                }
+
+                position: relative;
+
+                .article {
+                    position: absolute;
+                    top: 3rem;
+                    left: 1rem;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            gap: 10px;
+
+            .bottom-1 {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                }
+
+                position: relative;
+
+                .article {
+                    position: absolute;
+                    top: 4rem;
+                    left: 1rem;
+                    color: $primary-color;
+                }
+            }
+
+            .bottom-2 {
+                flex: 2;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                }
+
+                position: relative;
+
+                .article {
+                    position: absolute;
+                    top: 7rem;
+                    left: 1rem;
+                    color: $primary-color;
+                }
+
+            }
+        }
+    }
+
+    .section-two {
+
+        .flex-item {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+
+            img {
+                width: 20vw;
+            }
+        }
+    }
+
+    .section-three {
+        h1{
+            text-align: start;
+            margin-left: 4rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 4rem;
+            gap: 20px;
+
+            .grid-item {
+                display: block;
+                width: 20rem;
+                
+            }
+            img{
+                width: 38vw;
+            }
+        }
+    }
+    .section-four{
+        button {
+                position: absolute;
+                left: 35%;
+                border: none;
+                border-radius: 2rem;
+                width: 30%;
+        
+        
+            }
+    }
+        .section-five {
+            background-color: $btn-color;
+            width: 65vw;
+            padding: 8rem;
+            color: $primary-color;
+            text-align: center;
+    
+            h1 {
+                font-size: 4rem;
+    
+            }
+    
+            p {
+                margin-top: 3rem;
+            }
+        .submit {
+                input {
+                    padding: 0.8rem;
+                    border: solid transparent;
+                    background-color: lighten($btn-color , $amount: 10%);
+                    border-radius: 0.3rem;
+                    width: 30rem;
+                }
+    
+                button {
+                    padding: 0.8rem;
+                    border: solid transparent;
+                    background-color: lighten($btn-color , $amount: 10%);
+                    margin-left: -2rem;
+                    border-radius: 0.3rem;
+                    color: $primary-color;
+    
+                }
+            }
+    
+            .checkbox {
+                margin-top: 1rem;
+                display: flex;
+                justify-content: center;
+                margin-left: -290px;
+                color: lighten($btn-color , $amount: 20%);
+    
+                input {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    margin-right: 1rem;
+                }
+    
+                label {
+                    padding-top: 0;
+                    margin-top: 0.4rem;
+                    font-size: 0.8rem;
+                }
+            }
+    
+            .social-icons {
+                margin-top: 1rem;
+    
+                .fa-brands,
+                .fa-solid {
+                    color: lighten($btn-color, $amount: 20%);
+                    padding: 0.2rem;
+    
+                }
+            }
+        }
+    
+        .section-six {
+            width: 45rem;
+            padding: 0 1rem;
+    
+            .heading {
+                @include section-heading;
+            }
+    
+            .plugg-content {
+                display: flex;
+                gap: 30px;
+                .right{
+                    width: 20rem;
+                }  
+    
+            }
+    
+            .plug-content {
+                display: flex;
+                gap: 10px;
+
+                .order-1{
+                    order: 2;
+                }
+                .order-2{
+                    order: 1;
+                }
+            }
+    
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+    
+            p {
+                margin-top: -1rem;
+            }
+        }
+    
+        .section-seven {
+            width: 45rem;
+    
+            .heading {
+                @include section-heading;
+            }
+    
+            .plugg-content {
+                display: flex;
+                gap: 30px;
+                .right{
+                    width: 20rem;
+                }
+            }
+    
+            .plug-content {
+                display: flex;
+                gap: 10px;
+                .order-1{
+                    order: 2;
+                }
+                .order-2{
+                    order: 1;
+                }
+            }
+    
+            .neutral {
+                width: 26rem;
+    
+            }
+    
+    
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+    
+            p {
+                margin-top: -1rem;
+            }
+        }
+    
+        .section-eight {
+            width: 45rem;
+    
+            .heading {
+                @include section-heading;
+            }
+    
+            .plugg-content {
+                display: flex;
+                gap: 30px;
+                .right{
+                    width: 20rem;
+                }
+            }
+    
+            .plug-content {
+                display: flex;
+                gap: 10px;
+                .order-1{
+                    order: 2;
+                }
+                .order-2{
+                    order: 1;
+                }
+            }
+    
+            .neutral {
+                width: 26rem;
+    
+            }
+    
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+    
+            p {
+                margin-top: -1rem;
+            }
+        }
+    
+        .section-nine {
+            width: 45rem;
+    
+            .heading {
+                @include section-heading;
+            }
+    
+            .plugg-content {
+                display: flex;
+                gap: 30px; 
+                .right{
+                    width: 20rem;
+                }
+            }
+    
+            .plug-content {
+                display: flex;
+                gap: 10px;
+                .order-1{
+                    order: 2;
+                }
+                .order-2{
+                    order: 1;
+                }
+            }
+    
+            .neutral {
+                width: 26rem;
+    
+            }
+    
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+    
+            p {
+                margin-top: -1rem;
+            }
+        }
+    
+        .section-ten {
+            width: 45rem;
+    
+            .heading {
+                @include section-heading;
+            }
+    
+            .plugg-content {
+                display: flex;
+                gap: 30px;
+                .right{
+                    width: 20rem;
+                }
+            }
+    
+            .plug-content {
+                display: flex;
+                gap: 10px;
+                .order-1{
+                    order: 2;
+                }
+                .order-2{
+                    order: 1;
+                }
+            }
+    
+            .neutral {
+                width: 26rem;
+    
+            }
+    
+            h6 {
+                color: lighten($secondary-color, $amount: 30%);
+                margin-top: 0;
+            }
+    
+            p {
+                margin-top: -1rem;
+            }
+        }
+    
+    
+    
+        .section-eleven {
+            background-color: lighten($secondary-color, $amount: 43%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            // padding: 4rem;
+    
+            iframe {
+                width: 40vw;
+                height: 40vh;
+            }
+    
+            .airtag-links {
+                display: block;
+                width: 50%;
+                height: 50vw;
+                padding-top: 2rem;
+                overflow-y: scroll;
+    
+            }
+    
+            .airtags {
+                img {
+                    width: 18rem;
+                    height: 9rem;
+                    margin-bottom: -1rem;
+    
+    
+                }
+    
+                p {
+                    margin-bottom: 0;
+                }
+    
+            }
+        }
+    
+                .section-twelve {
+                    .amazon-section {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+        
+                    .amazon-article {
+                        flex: 1;
+                        text-align: center;
+                        padding-left: 12rem;
+        
+                        button {
+                            background-color: $btn-color;
+                            padding: 1rem 2rem;
+                            color: $primary-color;
+                            border: solid transparent;
+                            border-radius: 0.3rem;
+                        }
+                    }
+        
+                    .amazon-icons {
+                        flex: 1;
+                        display: flex;
+                        flex-wrap: wrap;
+        
+        
+                        div {
+        
+                            display: flex;
+                            align-items: center;
+                            width: 40%;
+                            padding: 1rem;
+        
+                            h6 {
+                                color: $inherit;
+                                font-size: 1rem;
+                            }
+                        }
+        
+                        img {
+                            width: 7rem;
+                        }
+                    }
+        
+                    .partners {
+                        padding: 5rem 0;
+                    }
+        
+        
+                    h6 {
+                        color: lighten($secondary-color, $amount: 20%);
+                    }
+        
+                    h1 {
+                        font-size: 3rem;
+                        color: $btn-color;
+                    }
+        
+                    .partners {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+        
+                        img {
+                            width: 8rem;
+                        }
+                    }
+                }
+        
+        
+                }
         
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(min-width:1200px){
+    .section--one{
+        display: none;
+    }
     .section-one {
         display: flex;
         justify-content: center;
-        gap: 10px;
-        
-    
         }
         .section-one-left{
             display: grid;
@@ -425,6 +1058,7 @@
                 }
             }
             .left-bottom {
+                left: 0;
                 img {
                         width: 48rem;
                         height: 15rem;
@@ -498,17 +1132,18 @@
         .section-three{
             
             h1 {
-                    font-size: 2.5rem;
-                    text-align: center;
+                    text-align: start;
+                    margin-left: 10rem;
             }
            
             .grid-container{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 18px;
-                padding: 0 15rem;
+                padding: 0 10rem;
                 .grid-item{
                     display: block;
+                    width: 15rem;
                 }
                  img {
                 width: 18vw;
@@ -527,7 +1162,7 @@
             
             button{
                 position: absolute;
-                left: 50%;
+                left: 45%;
                 padding: 1rem 3rem;
                 border: none;
                 border-radius: 2rem;
@@ -538,7 +1173,7 @@
         }
         .section-five{
             background-color: $btn-color;
-            width: 100vw;
+            width: 80vw;
             padding: 8rem;
             color: $primary-color;
             text-align: center;
@@ -576,7 +1211,7 @@
                 margin-top: 1rem;
                 display: flex;
                 justify-content: center;
-                margin-left: -345px;
+                margin-left: -290px;
                 color: lighten($btn-color , $amount: 20%);
 
                 input{
@@ -600,11 +1235,6 @@
                 }
             }
         }
-        
-
-
-
-
         .section-six{
             @include section;
             .heading{
@@ -613,11 +1243,20 @@
             .plugg-content{
                 display: flex;
                 gap: 30px;
+                .right{
+                    width: 26rem;
+                }
                 
             }
             .plug-content{
                 display: flex;
                 gap: 10px;
+                .order-1{
+                    order: 1;
+                }
+                .order-2{
+                    order: 2;
+                }
             }
 
             h6{
@@ -637,10 +1276,19 @@
             .plugg-content {
                 display: flex;
                 gap: 30px;
+                .right{
+                    width: 26rem;
+                }
             }
             .plug-content{
                 display: flex;
                 gap: 10px;
+                .order-1{
+                    order: 1;
+                }
+                .order-2{
+                    order: 2;
+                }
             }
             .neutral{
                 width: 26rem;
@@ -666,11 +1314,20 @@
             .plugg-content {
                  display: flex;
                  gap: 30px;
+                 .right{
+                    width: 26rem;
+                }
             }
             
             .plug-content {
                 display: flex;
                 gap: 10px;
+                .order-1{
+                    order: 1;
+                }
+                .order-2{
+                    order: 2;
+                }
             }
             
             .neutral {
@@ -697,11 +1354,20 @@
             .plugg-content {
                  display: flex;
                  gap: 30px;
+                 .right{
+                    width: 26rem;
+                }
             }
             
             .plug-content {
                 display: flex;
                 gap: 10px;
+                .order-1{
+                    order: 1;
+                }
+                .order-2{
+                    order: 2;
+                }
             }
             
             .neutral {
@@ -728,11 +1394,20 @@
             .plugg-content {
                  display: flex;
                  gap: 30px;
+                 .right{
+                    width: 26rem;
+                }
             }
             
             .plug-content {
                 display: flex;
                 gap: 10px;
+                .order-1{
+                    order: 1;
+                }
+                .order-2{
+                    order: 2;
+                }
             }
             
             .neutral {
@@ -761,9 +1436,18 @@
             gap: 1rem;
             padding: 4rem;
 
+            iframe {
+                    width: 50vw;
+                    height: 35vw;
+                    margin-top: -15rem;
+                }
+
             .airtag-links{
+                display: block;
                 width: 18rem;
                 padding-top: 2rem;
+                overflow: hidden;
+                
             }
            
             .airtags{
@@ -788,7 +1472,9 @@
             }
             .amazon-article{
                 flex: 1;
+                text-align: center;
                 padding-left: 12rem;
+                
                 button{
                     background-color: $btn-color;
                     padding: 1rem 2rem;
