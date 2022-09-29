@@ -965,8 +965,8 @@
   }
   .section-twelve .amazon-article {
     flex: 1;
-    text-align: center;
-    padding-left: 12rem;
+    text-align: start;
+    padding-left: 2rem;
   }
   .section-twelve .amazon-article button {
     background-color: #883dff;
@@ -1405,8 +1405,7 @@
   }
   .section-twelve .amazon-article {
     flex: 1;
-    text-align: center;
-    padding-left: 12rem;
+    text-align: start;
   }
   .section-twelve .amazon-article button {
     background-color: #883dff;

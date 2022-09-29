@@ -897,7 +897,9 @@
         }
     
                 .section-twelve {
+                   
                     .amazon-section {
+                        // margin-right: 9rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -905,8 +907,8 @@
         
                     .amazon-article {
                         flex: 1;
-                        text-align: center;
-                        padding-left: 12rem;
+                        text-align: start;
+                        padding-left: 2rem;
         
                         button {
                             background-color: $btn-color;
@@ -1472,9 +1474,7 @@
             }
             .amazon-article{
                 flex: 1;
-                text-align: center;
-                padding-left: 12rem;
-                
+                text-align: start;                
                 button{
                     background-color: $btn-color;
                     padding: 1rem 2rem;
