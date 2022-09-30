@@ -87,32 +87,39 @@
     display: none;
    }
    .navbar{
-    display: inline;
-   }
-   .nav-menu{
-    display: flex;
-    justify-content: space-between;
-    .nav-menu-items{
-        display: flex;
+        display: inline;
+        .nav-menu {
+                display: flex;
+                justify-content: space-between;
         
-        list-style-type: none;
-        .nav-menu-link{
-            text-decoration: none;
-            color: lighten($secondary-color, $amount: 20%);
-            padding-right: 1rem;
-            
-        }
-        .nav-menu-link:hover{
-            color: $inherit;
-        }
-        .news{
-            color: $inherit;
-        }
-        img{
-            display: none;
-        }
-    }
+                .nav-menu-items {
+                    display: flex;
+        
+                    list-style-type: none;
+        
+                    .nav-menu-link {
+                        text-decoration: none;
+                        color: lighten($secondary-color, $amount: 20%);
+                        padding-right: 1rem;
+        
+                    }
+        
+                    .nav-menu-link:hover {
+                        color: $inherit;
+                    }
+        
+                    .news {
+                        color: $inherit;
+                    }
+        
+                    img {
+                        display: none;
+                    }
+                }
+            }
+
    }
+   
    .nav-links{
     margin-left: -16rem;
     background-color: $primary-color;
